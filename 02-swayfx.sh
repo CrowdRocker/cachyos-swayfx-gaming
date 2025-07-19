@@ -5,6 +5,16 @@ echo "[2/4] Installing SwayFX and theming..."
 # enable flatpaks
 sudo pacman -S --noconfirm --needed flatpak
 
+###### Firewall installs ####
+sudo ufw enable
+sudo ufw status verbose
+sudo systemctl enable ufw.service
+sudo systemctl enable fstrim.timer
+sudo systemctl start fstrim.timer
+du -sh /var/cache/pacman/pkg/
+sudo pacman -S -y pacman-contrib
+sudo systemctl enable paccache.timer
+
 ###### yay ########
 sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si && cd
 
