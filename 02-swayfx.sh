@@ -85,6 +85,9 @@ exec wl-paste --type image --watch cliphist store
 # Outputs
 exec kanshi
 
+# wallpaper
+exec azote
+
 # nwg-drawer
 exec_always nwg-drawer -r -c 7 -is 90 -mb 10 -ml 50 -mr 50 -mt 10
 
