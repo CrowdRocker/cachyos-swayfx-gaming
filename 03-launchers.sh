@@ -6,7 +6,6 @@ sudo pacman -S --noconfirm \
   steam lutris heroic-games-launcher-bin \
   gamescope mangohud gamemode lib32-gamemode
 
-# Gamescope GUI launcher
 mkdir -p ~/.local/bin
 cat > ~/.local/bin/gamescope-launcher.sh <<EOF
 #!/bin/bash
@@ -31,8 +30,6 @@ esac
 EOF
 
 chmod +x ~/.local/bin/gamescope-launcher.sh
-
-# Bind key to sway config
 echo 'bindsym $mod+g exec ~/.local/bin/gamescope-launcher.sh' >> ~/.config/sway/config
 
 echo "✅ Game launchers installed with Wofi GUI."
