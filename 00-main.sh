@@ -5,3 +5,4 @@ set -e
 ./03-launchers.sh
 ./04-performance.sh
 echo "✅ All steps completed. Reboot your system!"
+
