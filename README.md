@@ -17,6 +17,15 @@ Optimized modular installer for a game-ready Arch-based desktop using **CachyOS 
 | `01-base.sh` | Installs base system + fonts + Vulkan + AMD |
 | `02-swayfx.sh` | SwayFX, Waybar, t
 
+🎮 Game Launcher
+Press <kbd>Super</kbd> + <kbd>G</kbd> to bring up a Gamescope-enabled launcher with:
+
+Steam Big Picture
+
+Lutris
+
+Heroic
+
 📸 Screenshot
 
 
